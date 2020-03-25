@@ -46,3 +46,39 @@ Dotkli jsme se dědičnosti. Což je významná vlastnost jazyka CSS. Ovšem poz
 Nejběžnějším typem je `@media screen`, tedy styly pro obrazvku. Dále se často používá pro vyčlenění tiskových stylů `@media print` (rušíme v nich se nastavení barev, skrývají se záhlaví a zápatí webu atp. aby vytištěná stránka odpovídala danému médiu, papíru). S tím si vystačíte na většinu běžných situací.
 
 <img src="img/media-types.png" width="829" height="289">
+
+### Práce s editorem
+
+Editor je náš základní nástroj, pokud ho ovládneme, ušetří nám spoustu úmorného psaní. Hlavní pozornost věnujte osvojení klávesových zkratek (postupně, nechtějte toho moc naráz) a využití několikanásobného kurzoru. To je funkce všech moderních editorů, která umožňuje psát na více místech naráz. Což je při psaní kódu velmi užitečné.
+
+Návody a ukázky:
+
+O vícenásobných kurzorech: https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor
+Pokročilé vyhledávání v kódu: https://code.visualstudio.com/docs/editor/codebasics#_find-and-replace
+
+### Emmet
+
+Využívejte naplno rozšíření emmet, které píše kód za vás. Dobře, ne úplně, ale víc než z poloviny určitě. I když se nejčastěji předvádí použití v HTML, cennější je dle mého soudu při psaní CSS. Místo vypisování vlastností stačí často uvést jen počáteční písmena + číslo (hodnotu). Tabelátor doplní vše potřebné.
+
+```
+m10 → margin: 10px;
+m1r → margin: 1rem;
+p.5r1r → padding: 0.5rem 1rem;
+pl.5r → padding-left: 0.5rem;
+```
+
+U některých vlastností to nejsou přímo počáteční písmena, ale i tyto zkratky vám přejdou rychle do krve:
+
+```
+bd ~ border
+bg ~ background
+fz ~ font-size (fs ~ font-style)
+bdrs ~ border-radius
+
+fz1.2r → font-size: 1.2rem;
+bgc#4 → background-color: #444444;
+bd → border: 1px solid #000; /* dalším stisknutím tabelátoru přeskakujete na dílčí hodnoty */
+```
+
+Emmet ve VS Code: https://code.visualstudio.com/docs/editor/emmet
+Zkratky v Emmetu (CSS v polovině stránky) https://docs.emmet.io/cheat-sheet/
