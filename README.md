@@ -65,6 +65,8 @@ m10 → margin: 10px;
 m1r → margin: 1rem;
 p.5r1r → padding: 0.5rem 1rem;
 pl.5r → padding-left: 0.5rem;
+df → display: flex;
+db → display: block;
 ```
 
 U některých vlastností to nejsou přímo počáteční písmena, ale i tyto zkratky vám přejdou rychle do krve:
@@ -74,10 +76,13 @@ bd ~ border
 bg ~ background
 fz ~ font-size (fs ~ font-style)
 bdrs ~ border-radius
+fxd ~ flex-direction
 
 fz1.2r → font-size: 1.2rem;
 bgc#4 → background-color: #444444;
 bd → border: 1px solid #000; /* dalším stisknutím tabelátoru přeskakujete na dílčí hodnoty */
+fxdc → flex-direction: column;
+fxdcr → flex-direction: column-reverse;
 ```
 
 Emmet ve VS Code: https://code.visualstudio.com/docs/editor/emmet
