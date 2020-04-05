@@ -14,6 +14,14 @@ Všechny myšlené znaky (písmena, číslice, klikyháky, emotikony) se dají v
 
 Dnes, když je kódování UTF-8 plně rozšířeno, ztrácejí entity na významu. Zůstává nám nejčastěji nezalomitelná (pevná mezera) `&nbsp;` (Non-Breaking SPace). Tu bychom například v českých textech měli používat vždy za jednopísmennými předložkami. Nebo mezi číslem a jednotkou (neplatí pro CSS!).
 
+Pozor, entitou vždy zapisujeme, tzv. escapujeme řídicí znaky (které mají v&nbsp;HTML zvláštní význam):     
+
+- `&gt;` = `>`
+- `&lt;` = `<`
+- `&amp;` = `&`
+
+**Entitu musíme například použít, když chceme vypsat &lt; ve smyslu _větší než_. Nepoužití entity mate prohlížeč, který vidí začátek otevírací značky.**
+
 Nově se entity vracejí na scénu v podobě populárních emoji, např. `&#128567;` = 😷
 
 [Přehled HTML entit](https://www.w3schools.com/html/html_entities.asp)
